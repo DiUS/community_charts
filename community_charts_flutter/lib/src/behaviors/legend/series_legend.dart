@@ -92,7 +92,7 @@ class SeriesLegend<D> extends ChartBehavior<D> {
 
   final List<String>? defaultHiddenSeries;
 
-  final HiddenSeriesOnChange hiddenSeriesOnChange;
+  final HiddenSeriesOnChange? hiddenSeriesOnChange;
 
   /// Create a new tabular layout legend.
   ///
@@ -389,7 +389,7 @@ class _FlutterSeriesLegend<D> extends common.SeriesLegend<D>
 
     if (config.hiddenSeriesOnChange != null) {
       List<String> tmpHiddenSeriesList = showHiddenSeriesList();
-      config.hiddenSeriesOnChange(tmpHiddenSeriesList);
+      config.hiddenSeriesOnChange!(tmpHiddenSeriesList);
     }
 
     // Redraw the chart to actually hide hidden series.
