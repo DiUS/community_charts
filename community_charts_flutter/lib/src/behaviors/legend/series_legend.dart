@@ -37,7 +37,7 @@ import 'legend_content_builder.dart'
     show LegendContentBuilder, TabularLegendContentBuilder;
 import 'legend_layout.dart' show TabularLegendLayout;
 
-typedef void HiddenSeriesOnChange(List<String> hiddenSeries);
+typedef HiddenSeriesOnChange = void Function(List<String> hiddenSeries);
 
 /// Series legend behavior for charts.
 @immutable
